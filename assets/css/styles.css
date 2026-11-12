@@ -989,3 +989,7 @@ h4 {
         box-sizing: border-box;
     }
 }
+a:focus, button:focus {
+    outline: 2px solid #ff8900;
+    outline-offset: 2px;
+}
