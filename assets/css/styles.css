@@ -411,6 +411,7 @@ h4 {
 .about {
     margin-top: 65px;
     padding: 25px 30px;
+    margin-bottom: 50px;
     background: #241207;
     border-radius: 14px;
 }
@@ -812,4 +813,179 @@ h4 {
     width: 300px;
     max-height: 300px;
     object-fit: contain;
+}
+
+@media (max-width: 1100px) {
+    .wrap {
+        width: 85%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-players {
+        display: none;
+    }
+
+    .hero-copy {
+        width: 100%;
+    }
+
+    .store {
+        width: 100%;
+    }
+
+    .store-body {
+        flex-wrap: wrap;
+    }
+
+    .tabs {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .news-grid,
+    .rewards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guide-layout,
+    .news-wide {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .guide-steps,
+    .article-body,
+    .rules-intro,
+    .rules-list,
+    .bottom-help,
+    .article-page {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        min-width: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-note {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .hero-button span {
+        margin-left: 10px;
+    }
+
+    .store-body {
+        flex-direction: column;
+    }
+
+    .store-preview,
+    .product-column,
+    .description-column {
+        width: 100%;
+    }
+
+    .store-preview img {
+        margin: 0 auto;
+        display: block;
+        max-width: 250px;
+    }
+
+    .description-column .orange {
+        width: 100%;
+        margin: 0;
+    }
+
+    .news-grid,
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guide-player {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .article-page {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .article-page h2 {
+        font-size: 26px;
+    }
+
+    .article-body {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .article-cover,
+    .article-body img,
+    .news-wide img,
+    .hero-players img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    * {
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
 }
